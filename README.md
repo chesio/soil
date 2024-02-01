@@ -1,13 +1,9 @@
 # Soil
-[![Packagist](https://img.shields.io/packagist/v/roots/soil.svg?style=flat-square)](https://packagist.org/packages/roots/soil)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/roots/soil.svg?style=flat-square)](https://packagist.org/packages/roots/soil)
-![Build Status](https://github.com/roots/soil/workflows/Compatibility%20Checks/badge.svg)
-[![Project Status: Unsupported – The project has reached a stable, usable state but the author(s) have ceased all work on it.](https://www.repostatus.org/badges/latest/unsupported.svg)](https://www.repostatus.org/#unsupported)
 
 A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications.
 
 > [!CAUTION]
-> This plugin is no longer maintained. Use [Acorn Prettify](https://github.com/roots/acorn-prettify) instead.
+> This is a private fork of the [original plugin](https://github.com/roots/soil/) that is no longer maintained.
 
 ## Requirements
 
@@ -24,36 +20,11 @@ A WordPress plugin which contains a collection of modules to apply theme-agnosti
       <td>PHP &gt;= 5.6.x</td>
       <td><code>php -v</code></td>
       <td>
-        <a href="http://php.net/manual/en/install.php">php.net</a>
+        <a href="https://php.net/manual/en/install.php">php.net</a>
       </td>
     </tr>
   </tbody>
 </table>
-
-## Installation
-
-You can install this plugin via the command-line or the WordPress admin panel.
-
-### via Command-line
-
-If you're [using Composer to manage WordPress](https://roots.io/using-composer-with-wordpress/), add Soil to your project's dependencies.
-
-```sh
-composer require roots/soil
-```
-
-Then activate the plugin via [wp-cli](http://wp-cli.org/commands/plugin/activate/).
-
-```sh
-wp plugin activate soil
-```
-
-### via WordPress Admin Panel
-
-1. Download the [latest zip](https://github.com/roots/soil/releases/latest) of this repo.
-2. In your WordPress admin panel, navigate to Plugins->Add New
-3. Click Upload Plugin
-4. Upload the zip file that you downloaded.
 
 ## Modules
 
@@ -237,17 +208,3 @@ add_theme_support('soil', [
 ]);
 ```
 </details>
-
-## Contributing
-
-Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md) to help you get started.
-
-## Community
-
-Keep track of development and community news.
-
-* Participate on the [Roots Discourse](https://discourse.roots.io/)
-* Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-* Read and subscribe to the [Roots Blog](https://roots.io/blog/)
-* Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
-* Listen to the [Roots Radio podcast](https://roots.io/podcast/)

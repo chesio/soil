@@ -2,13 +2,13 @@
 
 /**
  * Plugin Name:        Soil
- * Plugin URI:         https://roots.io/plugins/soil/
+ * Plugin URI:         https://github.com/chesio/soil/
  * Description:        A collection of modules to apply theme-agnostic front-end modifications to WordPress.
- * Version:            4.1.1
+ * Version:            4.1.1.pl
  * Author:             Roots
  * Author URI:         https://roots.io/
- * GitHub Plugin URI:  https://github.com/roots/soil
- * Primary Branch:     main
+ * GitHub Plugin URI:  https://github.com/chesio/soil/
+ * Primary Branch:     bluechip
  *
  * License:            MIT License
  * License URI:        https://opensource.org/licenses/MIT
