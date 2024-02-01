@@ -11,7 +11,6 @@ use function is_search;
 use function sanitize_title;
 use function add_filter;
 use function remove_filter;
-use function Roots\Soil\compare_base_url;
 
 /**
  * Cleaner navigation walker.
@@ -111,7 +110,7 @@ class NavWalker extends Walker_Nav_Menu
         add_filter('nav_menu_item_id', '__return_null');
 
         // Perform usual walk
-        $output = call_user_func_array(['parent', 'walk'], func_get_args());
+        $output = call_user_func_array([get_parent_class($this), 'walk'], func_get_args());
 
         // Unregister filters
         remove_filter('nav_menu_css_class', [$this, 'cssClasses']);
