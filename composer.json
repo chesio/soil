@@ -1,5 +1,5 @@
 {
-  "name": "roots/soil",
+  "name": "chesio/soil",
   "type": "wordpress-plugin",
   "license": "MIT",
   "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
@@ -21,7 +21,6 @@
       "homepage": "https://github.com/qwp6t"
     }
   ],
-  "abandoned": "roots/acorn-prettify",
   "keywords": [
     "wordpress"
   ],
