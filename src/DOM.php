@@ -8,6 +8,8 @@ use DOMXPath;
 
 class DOM
 {
+    private const XML_ENCODING_PREAMBLE = '<?xml encoding="UTF-8">';
+
     /**
      * The root document.
      *
@@ -27,7 +29,7 @@ class DOM
 
         // use LibXML internal error handler to prevent errors from bubbling to PHP
         libxml_use_internal_errors(true);
-        $this->doc->loadHTML('<?xml encoding="UTF-8">' . $html, \LIBXML_HTML_NOIMPLIED | \LIBXML_HTML_NODEFDTD);
+        $this->doc->loadHTML(self::XML_ENCODING_PREAMBLE . $html, \LIBXML_HTML_NOIMPLIED | \LIBXML_HTML_NODEFDTD);
         libxml_clear_errors(); // clear all libxml errors
     }
 
@@ -64,8 +66,7 @@ class DOM
      */
     public function html()
     {
-        // Note: 23 = strlen('<?xml encoding="UTF-8">')
-        return trim(substr($this->doc->saveHTML(), 23));
+        return trim(str_replace(self::XML_ENCODING_PREAMBLE, '', $this->doc->saveHTML()));
     }
 
     /** {@inheritdoc} */
