@@ -7,10 +7,7 @@ use Roots\Soil\DOM;
 
 use function add_action;
 use function add_filter;
-use function esc_url;
 use function get_bloginfo;
-use function get_default_feed;
-use function get_feed_link;
 use function get_option;
 use function get_permalink;
 use function is_front_page;
