@@ -4,7 +4,7 @@
  * Plugin Name:        Soil
  * Plugin URI:         https://github.com/chesio/soil/
  * Description:        A collection of modules to apply theme-agnostic front-end modifications to WordPress.
- * Version:            4.1.1.pl
+ * Version:            2025.10.24
  * Author:             Roots
  * Author URI:         https://roots.io/
  * GitHub Plugin URI:  https://github.com/chesio/soil/
